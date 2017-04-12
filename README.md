@@ -29,9 +29,8 @@ Because teams of people have collective chores that they need to perform.
       * Underscore `_` will be replaced by space ` `
 * Examples
    * Open pull request
-      * `<schedule>_some-descriptive-name=<task>:<owner/org>/<repo>:<owner/org>/<repo>/<where-to-put-file>:<pr-description>`
-      * e.g. `DAILY_EXAMPLE=pr:chids/annoyance/template.md:chids/annoyance/stuff/{date}/{week}.md:@chids`
-
+      * `<schedule>_some-descriptive-name=<owner/org>/<repo>:<owner/org>/<repo>/<where-to-put-file>:<pr-description>`
+      * e.g. `DAILY_EXAMPLE=chids/annoyance/template.md:chids/annoyance/stuff/{date}/{week}.md:@chids`
 ### Heroku app configuration
 
 1. Add the [Scheduler](https://devcenter.heroku.com/articles/scheduler) add-on

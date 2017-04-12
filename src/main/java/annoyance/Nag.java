@@ -32,6 +32,7 @@ public class Nag {
 
     public Stream<Task> tasks() {
         return this.schedule.find(this.env).entrySet().stream()
+                .peek(System.err::println)
                 .map((task) -> new SimpleEntry<>(task.getKey(), task.getValue().split(":")))
                 .map(Nag::asTask);
     }
